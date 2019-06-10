@@ -2,13 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>The Snitch</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+    <section id="first-page">
+      <div id="root">
+        <img src="./../img/theSnitch-white.png" alt="logo" id="logo">
+        <h1>The Snitch</h1>
+        <p id="presentation">Tus mensajes más seguros.
+        <em>Rápido, sencillo y secreto</em>.</p>
+        <p>¿Qué deseas hacer?</p>
+        <div id="first-buttons">
+        <a id="cifrar-button">Cifrar<img id="cifrar-icon"src="./../img/lock.png" alt="lock-icon"></a>
+        <a id="descifrar-button">Descifrar<img id="descifrar-icon"src="./../img/unlock.png" alt="unlock-icon"></a>
+        <input type="button" name="help-button" value="?" id="help-button">
+      </div>
+      </div>
+    </section>
+    <section class="hide" id="instructions">
+
+    </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
