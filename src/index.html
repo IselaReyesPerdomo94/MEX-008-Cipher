@@ -7,7 +7,6 @@
   </head>
   <body>
     <section id="first-page">
-      <div id="root">
         <img src="./../img/theSnitch-white.png" alt="logo" id="logo">
         <h1>The Snitch</h1>
         <p id="presentation">Tus mensajes más seguros.
@@ -18,10 +17,31 @@
         <a id="descifrar-button">Descifrar<img id="descifrar-icon"src="./../img/unlock.png" alt="unlock-icon"></a>
         <input type="button" name="help-button" value="?" id="help-button">
       </div>
-      </div>
     </section>
     <section class="hide" id="instructions">
-
+      <div class="instructions-text">
+      <input type="button" name="close" value="X" id="close">
+      <h2 class="instructions-text">Instrucciones</h2>
+      <p class="instructions-text">The Snitch nació con la necesidad de compartir información delicada, o bien
+      para mandar cifrar mensajes que no toda la oficina debe de enterarse.</p>
+      <p class="instructions-text">Utilizarlo es muy sencillo, solo necesitas elegir si quieres cifrar un
+      mensaje o leer un mensaje ya cifrado</p>
+      <h3 class="instructions-text">Para cifrar:</h3>
+      <ol class="instructions-text">
+        <li class="instructions-text">Da click en cifrar.</li>
+        <li class="instructions-text">Elige una clave númerica (es importante
+          que no olvides este número ya que es el necesario para decodificar tu
+         mensaje)</li>
+        <li class="instructions-text">Escribe tu mensaje</li>
+        <li class="instructions-text">Y listo!</li>
+      </ol>
+      <h3 class="instructions-text">Para descifrar:</h3>
+      <ol class="instructions-text">
+        <li class="instructions-text">Da click en descifrar.</li>
+        <li class="instructions-text">Ingresa la clave que tu compañero te brindó</li>
+        <li class="instructions-text">Y listo!</li>
+      </ol>
+    </div>
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
