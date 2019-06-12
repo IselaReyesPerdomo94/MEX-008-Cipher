@@ -13,35 +13,67 @@
         <em>Rápido, sencillo y secreto</em>.</p>
         <p>¿Qué deseas hacer?</p>
         <div id="first-buttons">
-        <a id="cifrar-button">Cifrar<img id="cifrar-icon"src="./../img/lock.png" alt="lock-icon"></a>
-        <a id="descifrar-button">Descifrar<img id="descifrar-icon"src="./../img/unlock.png" alt="unlock-icon"></a>
+        <a id="cifrar-button">
+          Cifrar
+          <img id="cifrar-icon" src="./../img/lock.png" alt="lock-icon">
+        </a>
+        <a id="descifrar-button">
+          Descifrar
+          <img id="descifrar-icon" src="./../img/unlock.png" alt="unlock-icon">
+        </a>
         <input type="button" name="help-button" value="?" id="help-button">
       </div>
     </section>
     <section class="hide" id="instructions">
       <div class="instructions-text">
-      <input type="button" name="close" value="X" id="close">
-      <h2 class="instructions-text">Instrucciones</h2>
-      <p class="instructions-text">The Snitch nació con la necesidad de compartir información delicada, o bien
-      para mandar cifrar mensajes que no toda la oficina debe de enterarse.</p>
-      <p class="instructions-text">Utilizarlo es muy sencillo, solo necesitas elegir si quieres cifrar un
-      mensaje o leer un mensaje ya cifrado</p>
-      <h3 class="instructions-text">Para cifrar:</h3>
-      <ol class="instructions-text">
-        <li class="instructions-text">Da click en cifrar.</li>
-        <li class="instructions-text">Elige una clave númerica (es importante
-          que no olvides este número ya que es el necesario para decodificar tu
-         mensaje)</li>
-        <li class="instructions-text">Escribe tu mensaje</li>
-        <li class="instructions-text">Y listo!</li>
-      </ol>
-      <h3 class="instructions-text">Para descifrar:</h3>
-      <ol class="instructions-text">
-        <li class="instructions-text">Da click en descifrar.</li>
-        <li class="instructions-text">Ingresa la clave que tu compañero te brindó</li>
-        <li class="instructions-text">Y listo!</li>
-      </ol>
+        <input type="button" name="close" value="X" id="close">
+        <h2>Instrucciones</h2>
+        <p>The Snitch nació con la necesidad de compartir información delicada, o bien
+        para mandar cifrar mensajes que no toda la oficina debe de enterarse.</p>
+        <p>Utilizarlo es muy sencillo, solo necesitas elegir si quieres cifrar un
+        mensaje o leer un mensaje ya cifrado</p>
+        <h3>Para cifrar:</h3>
+        <ol>
+          <li>Da click en cifrar.</li>
+          <li>Elige una clave númerica (es importante
+            que no olvides este número ya que es el necesario para decodificar tu
+           mensaje).</li>
+          <li>Escribe tu mensaje.</li>
+          <li>Y listo!</li>
+        </ol>
+        <h3>Para descifrar:</h3>
+        <ol>
+          <li>Da click en descifrar.</li>
+          <li>Ingresa la clave que tu compañero te brindó.</li>
+          <li>Y listo!</li>
+        </ol>
     </div>
+    </section>
+    <section id="cipher-code" class="hide">
+      <header>
+        <img src="./../img/theSnitch-white.png" alt="logo" id="logo-c">
+        <h1 id="the-snitch-h1-c">The Snitch</h1>
+      </header>
+      <h2>Cifrar</h2>
+      <input type="text" name="offSet" value="" id="offSet-c" placeholder="Elige tu clave">
+      <textarea name="message" rows="5" cols="80" id="message-to-code"
+      placeholder="Escribe tu mensaje a cifrar"></textarea>
+      <p id="code-message">Hello</p>
+      <label>¿Quieres descifrar?</label>
+        <input type="button" name="yes" value="Si" id="yes-button">
+    </section>
+    <section id="cipher-decode" class="hide">
+      <header>
+        <img src="./../img/theSnitch-white.png" alt="logo" id="logo-d">
+        <h1 id="the-snitch-h1-d">The Snitch</h1>
+      </header>
+      <h2>Descifrar</h2>
+      <input type="text" name="offSetd" value="" id="offSet-d" placeholder="Ingresa la clave">
+      <textarea name="messaged" rows="5" cols="80" id="message-to-decode"
+      placeholder="Escribe tu mensaje a descifrar"></textarea>
+      <p id="decode-message">Hello</p>
+      <label>¿Quieres cifrar?</label>
+      <input type="button" name="no" value="Si" id="yes-button-decode">
     </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
