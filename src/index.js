@@ -75,7 +75,6 @@ descifrarButton.addEventListener("click", openDecodeSection);
 const decodeIcon = document.getElementById('decode-icon');
 let decodeOffSet = document.getElementById('offSet-d');
 let textToDecode = document.getElementById('message-to-decode');//Saving text of textarea in cipher-decode section
-// let decodeOffSetValue = parseInt(decodeOffSet.value);
 
 const printDecodedMessage = () => {
   const blankSpace = document.getElementById('decode-message');
