@@ -1,5 +1,4 @@
 //Working with help button-instructions
-
 const helpButton = document.getElementById('help-button');
 const closeButton = document.getElementById('close');
 
@@ -7,15 +6,12 @@ const closeButton = document.getElementById('close');
 const hideSection = (id) => {
   document.getElementById(id).classList.add('hide');
 }
-
 //Function that show section with id
 const showSection = (id) => {
   document.getElementById(id).classList.remove('hide');
 }
-
 //Functionability for help button and close button
 const showInstructions = () => { showSection('instructions');}
-
 const closeInstructions = () => {hideSection('instructions');}
 
 helpButton.addEventListener("click", showInstructions);
@@ -30,6 +26,22 @@ const openCipherSection = () => {
 }
 
 cifrarButton.addEventListener("click", openCipherSection);
+
+//saving the input of offSet in cipher-code
+const encodeIcon = document.getElementById('encode-icon');
+let codeOffSet = document.getElementById('offSet-c');
+let textToCode = document.getElementById('message-to-code');//saving text input in cipher-code
+
+const printNewMessage = () => {
+  const blankSpace = document.getElementById('code-message');//getting paragraph.
+  let codeOffSetNumber = parseInt(codeOffSet.value);
+  let textCoded = cipher.encode(codeOffSetNumber, textToCode.value);
+  console.log(blankSpace)
+  console.log(textCoded);
+  blankSpace.innerHTML = textCoded;
+}
+
+encodeIcon.addEventListener("click", printNewMessage);
 
 //to go back to main page with logo from cipher-code
 const logoC = document.getElementById('logo-c');
@@ -52,7 +64,6 @@ const backToFirstPageC = () =>{
 theSnitchTextC.addEventListener("click", backToFirstPageC);
 
 //To open cipher-decode section with button
-
 const descifrarButton = document.getElementById('descifrar-button');
 
 const openDecodeSection = () => {
@@ -62,6 +73,13 @@ const openDecodeSection = () => {
 
 descifrarButton.addEventListener("click", openDecodeSection);
 
+// //Saving value of offSet in cipher-decode section
+// let decodeOffSet = document.getElementById('offSet-d');
+// let decodeOffSetValue = parseInt(decodeOffSet.value);
+//
+// //Saving text of textarea in cipher-decode section
+// let textToDecode = document.getElementById('message-to-decode').value;
+// let textToDecodeMayus= textToDecode.toUpperCase();
 //to go back to main page with logo from cipher-decode
 const logoD = document.getElementById('logo-d');
 
@@ -71,7 +89,6 @@ const goTofirstPageD = () => {
 }
 
 logoD.addEventListener("click", goTofirstPageD);
-
 //working with yes button in cipher-code section to redirect to cipher-decode
 
 const yesButtonC = document.getElementById('yes-button');
@@ -82,7 +99,6 @@ const goingToDecodeSection = () => {
 }
 
 yesButtonC.addEventListener("click", goingToDecodeSection);
-
 //working with yes button in cipher-decode section to redirect to cipher-code
 
 const yesButtonD = document.getElementById('yes-button-decode');
@@ -93,6 +109,7 @@ const goingToCodeSection = () => {
 }
 
 yesButtonD.addEventListener("click", goingToCodeSection)
+
 //to go back to main page with name of goTofirstPage
 const theSnitchTextD = document.getElementById('the-snitch-h1-d');
 

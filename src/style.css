@@ -53,6 +53,7 @@ p{
   border-radius: 100%;
   padding: 2px 10px;
   border: none;
+  cursor: pointer;
 }
 
 #help-button:hover{
@@ -71,6 +72,7 @@ p{
   height: 25px;
   background-color: transparent;
   padding: 2px;
+  cursor: pointer;
 }
 
 #cifrar-button{
@@ -83,6 +85,7 @@ p{
   margin: 40px 25px;
   border-radius: 20px;
   width: 60px;
+  cursor: pointer;
 }
 
 #cifrar-button:hover{
@@ -97,6 +100,7 @@ p{
   height: 30px;
   background-color: transparent;
   padding: 2px;
+  cursor: pointer;
 }
 
 #descifrar-button{
@@ -109,6 +113,7 @@ p{
   margin: 40px 25px;
   border-radius: 20px;
   width: 60px;
+  cursor: pointer;
 }
 
 #descifrar-button:hover{
@@ -200,6 +205,7 @@ p{
 
 #cipher-code header:hover, #cipher-decode header:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 #cipher-code label, #cipher-decode label{
@@ -215,17 +221,47 @@ p{
   display: block;
   position: absolute;
   top: 200px;
-  right: 450px;
+  right: 540px;
   margin: 0 auto;
   font-family: 'Open Sans Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.text-icon{
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 #message-to-code, #message-to-decode{
-  margin: 140px auto;
+  margin: 100px 30px 100px 510px;
   margin-bottom: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
-  display: block;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#encode-icon, #decode-icon{
+  padding: 5px;
+  padding-right: 9px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  width: 20px;
+  border:none;
+  cursor: pointer;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#encode-icon:hover{
+  background-color: #FFFD75;
+  transform: scale(1.5)
+}
+
+#decode-icon:hover{
+  background-color: #ABFF66;
+  transform: scale(1.5);
 }
 
 #code-message, #decode-message{
@@ -235,7 +271,7 @@ p{
   display: block;
   background-color: white;
   color: black;
-  width: 665px;
+  width: 500px;
   text-align: center;
   height: 100px;
 }
@@ -249,7 +285,7 @@ p{
   margin: 20px auto;
   border-radius: 10px;
   width: 40px;
-  border:none;
+  border:none;cursor: pointer;
 }
 
 #yes-button:hover{

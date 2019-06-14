@@ -31,7 +31,7 @@
         <p>The Snitch nació con la necesidad de compartir información delicada, o bien
         para mandar cifrar mensajes que no toda la oficina debe de enterarse.</p>
         <p>Utilizarlo es muy sencillo, solo necesitas elegir si quieres cifrar un
-        mensaje o leer un mensaje ya cifrado</p>
+        mensaje o leer un mensaje ya cifrado.</p>
         <h3>Para cifrar:</h3>
         <ol>
           <li>Da click en cifrar.</li>
@@ -55,10 +55,13 @@
         <h1 id="the-snitch-h1-c">The Snitch</h1>
       </header>
       <h2>Cifrar</h2>
-      <input type="text" name="offSet" value="" id="offSet-c" placeholder="Elige tu clave">
-      <textarea name="message" rows="5" cols="80" id="message-to-code"
-      placeholder="Escribe tu mensaje a cifrar"></textarea>
-      <p id="code-message">Hello</p>
+      <input type="text" name="offSet" id="offSet-c" placeholder="Elige tu clave">
+      <div class="text-icon">
+        <textarea name="message" rows="5" cols="60" id="message-to-code"
+        placeholder="Escribe tu mensaje a cifrar"></textarea>
+        <img id="encode-icon" src="./../img/lock.png" alt="lock-icon">
+      </div>
+      <p id="code-message"></p>
       <label>¿Quieres descifrar?</label>
         <input type="button" name="yes" value="Si" id="yes-button">
     </section>
@@ -69,9 +72,12 @@
       </header>
       <h2>Descifrar</h2>
       <input type="text" name="offSetd" value="" id="offSet-d" placeholder="Ingresa la clave">
-      <textarea name="messaged" rows="5" cols="80" id="message-to-decode"
-      placeholder="Escribe tu mensaje a descifrar"></textarea>
-      <p id="decode-message">Hello</p>
+      <div class="text-icon">
+        <textarea name="messaged" rows="5" cols="60" id="message-to-decode"
+        placeholder="Escribe tu mensaje a descifrar"></textarea>
+        <img id="decode-icon" src="./../img/unlock.png" alt="unlock-icon">
+      </div>
+      <p id="decode-message"></p>
       <label>¿Quieres cifrar?</label>
       <input type="button" name="no" value="Si" id="yes-button-decode">
     </section>
