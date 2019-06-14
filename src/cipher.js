@@ -12,8 +12,9 @@ window.cipher = {
   },
   decode: (offset, string) => {
     let textDecoded = '';
-    for(let i = 0; i < string.length; i++){
-      let stringInAsccii = string.charCodeAt(i);
+    let stringM = string.toUpperCase();
+    for(let i = 0; i < stringM.length; i++){
+      let stringInAsccii = stringM.charCodeAt(i);
       let asciiWithoutOffset = (stringInAsccii - 65 - offset + 52) % 26 + 65;
       let fromAsciiToText = String.fromCharCode(asciiWithoutOffset);
       textDecoded += fromAsciiToText;

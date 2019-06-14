@@ -36,8 +36,6 @@ const printNewMessage = () => {
   const blankSpace = document.getElementById('code-message');//getting paragraph.
   let codeOffSetNumber = parseInt(codeOffSet.value);
   let textCoded = cipher.encode(codeOffSetNumber, textToCode.value);
-  console.log(blankSpace)
-  console.log(textCoded);
   blankSpace.innerHTML = textCoded;
 }
 
@@ -73,13 +71,20 @@ const openDecodeSection = () => {
 
 descifrarButton.addEventListener("click", openDecodeSection);
 
-// //Saving value of offSet in cipher-decode section
-// let decodeOffSet = document.getElementById('offSet-d');
+//Saving value of offSet in cipher-decode section
+const decodeIcon = document.getElementById('decode-icon');
+let decodeOffSet = document.getElementById('offSet-d');
+let textToDecode = document.getElementById('message-to-decode');//Saving text of textarea in cipher-decode section
 // let decodeOffSetValue = parseInt(decodeOffSet.value);
-//
-// //Saving text of textarea in cipher-decode section
-// let textToDecode = document.getElementById('message-to-decode').value;
-// let textToDecodeMayus= textToDecode.toUpperCase();
+
+const printDecodedMessage = () => {
+  const blankSpace = document.getElementById('decode-message');
+  let decodeOffSetValue = parseInt(decodeOffSet.value);
+  let textDecoded = cipher.decode(decodeOffSetValue, textToDecode.value);
+  blankSpace.innerHTML = textDecoded;
+}
+
+decodeIcon.addEventListener('click', printDecodedMessage);
 //to go back to main page with logo from cipher-decode
 const logoD = document.getElementById('logo-d');
 
