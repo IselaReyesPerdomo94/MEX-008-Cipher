@@ -1,4 +1,4 @@
-#The Snitch
+# The Snitch
 
 ## Presentación:
 The Snitch nació con la necesidad de la necesidad de mandar textos con información
