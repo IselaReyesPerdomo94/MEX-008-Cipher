@@ -41,6 +41,17 @@ const printNewMessage = () => {
 
 encodeIcon.addEventListener("click", printNewMessage);
 
+//Erasing values in both inputs
+const eraseCButton = document.getElementById('erase-c');
+const blankSpaceC = document.getElementById('code-message');
+
+const eraseValuesC = () => {
+  codeOffSet.value = '';
+  textToCode.value = '';
+  blankSpaceC.innerHTML = '';
+}
+
+eraseCButton.addEventListener('click', eraseValuesC);
 //to go back to main page with logo from cipher-code
 const logoC = document.getElementById('logo-c');
 
@@ -84,6 +95,18 @@ const printDecodedMessage = () => {
 }
 
 decodeIcon.addEventListener('click', printDecodedMessage);
+
+//erase values in decode Section
+const eraseDButton = document.getElementById('erase-d');
+const blankSpaceD = document.getElementById('decode-message');
+
+const eraseValuesD = () => {
+  decodeOffSet.value = '';
+  textToDecode.value = '';
+  blankSpaceD.innerHTML = '';
+}
+
+eraseDButton.addEventListener('click', eraseValuesD);
 //to go back to main page with logo from cipher-decode
 const logoD = document.getElementById('logo-d');
 
