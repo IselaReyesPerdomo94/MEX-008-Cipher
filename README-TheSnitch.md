@@ -15,18 +15,18 @@ Por ejemplo: HOLA, con un desplazamiento de 1, tendría como resultado IPMB. La 
 
 El usuario debe elegir si desea cifrar algún texto o descifrar uno.
 * Si decide cifrar:
-    -Debe dar click en el botón de cifrar.
-    -Elegir un número (offset), el cual es el que dictamina el desplazamiento.
-    -Ingresar su texto a cifrar.
-    -Dar click en el botón con forma de candado.
-    -Y listo, aparecerá su mensaje en la parte de abajo.
-    -Si desea volver a cifrar, solo debe dar click en borrar, para rellenar los campos.
+    - Debe dar click en el botón de cifrar.
+    - Elegir un número (offset), el cual es el que dictamina el desplazamiento.
+    - Ingresar su texto a cifrar.
+    - Dar click en el botón con forma de candado.
+    - Y listo, aparecerá su mensaje en la parte de abajo.
+    - Si desea volver a cifrar, solo debe dar click en borrar, para rellenar los campos.
 * Si decide descifrar:
-    -Debe dar click en el botón de descifrar.
-    -Ingresar el número de desplazamiento (Mismo que debe ser proporcionado por la persona que mando el mensaje).
-    -Ingresar el texto a descifrar.
-    -Y listo, aparecerá su mensaje descifrado en la parte de abajo.
-    -Si desea volver a descifrar, solo debe dar click en borrar, para introducir el nuevo offset y texto.
+    - Debe dar click en el botón de descifrar.
+    - Ingresar el número de desplazamiento (Mismo que debe ser proporcionado por la persona que mando el mensaje).
+    - Ingresar el texto a descifrar.
+    - Y listo, aparecerá su mensaje descifrado en la parte de abajo.
+    - Si desea volver a descifrar, solo debe dar click en borrar, para introducir el nuevo offset y texto.
 
 ### ¿Cómo se llegó a dicha idea?
 Se le preguntó a 12 personas diferentes, 10 mujeres y 2 hombres de entre 20 y 30
@@ -64,7 +64,7 @@ Solo necesitas un navegador y dar click en el siguiente link:
 https://iselareyesperdomo94.github.io/MEX-008-Cipher/src/index.html
 
 ### ¿Cómo puedo descargar, instalar y ejecutar este proyecto?
--Necesitas forkear este repositorio y clonarlo en tu computadora.
--Tener un editor de texto.
--Instalar Node.js y la librería de Mocha.
+- Necesitas forkear este repositorio y clonarlo en tu computadora.
+- Tener un editor de texto.
+- Instalar Node.js y la librería de Mocha.
 * Para ejecutar los test, debes correr en tu terminal npm run test.
