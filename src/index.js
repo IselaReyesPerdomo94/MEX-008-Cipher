@@ -11,8 +11,8 @@ const showSection = (id) => {
   document.getElementById(id).classList.remove('hide');
 }
 //Functionability for help button and close button
-const showInstructions = () => { showSection('instructions');}
-const closeInstructions = () => {hideSection('instructions');}
+const showInstructions = () =>  showSection('instructions');
+const closeInstructions = () => hideSection('instructions');
 
 helpButton.addEventListener("click", showInstructions);
 closeButton.addEventListener("click", closeInstructions)
