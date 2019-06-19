@@ -6,6 +6,8 @@ confidencial o bien, para codificar mensajes que no deben ser leídos en toda la
 Si tu empresa maneja información privada o simplemente deseas mandar una nota a
 un compañero, The Snitch es la web indicada para ti.
 
+![](https://github.com/IselaReyesPerdomo94/MEX-008-Cipher/blob/master/img/TheSnitch.gif)
+
 ## ¿Cómo funciona?
 The Snitch utiliza el cifrado César, conocido por ser uno de los primeros sistemas de cifrado, utilizando el abecedario y
 cifrado por sustitución. Es decir, se elige un número de desplazamiento por el cual se sustituirá la letra original con la
