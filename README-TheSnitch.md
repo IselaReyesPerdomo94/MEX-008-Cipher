@@ -68,3 +68,8 @@ https://iselareyesperdomo94.github.io/MEX-008-Cipher/src/index.html
 - Tener un editor de texto.
 - Instalar Node.js y la librería de Mocha.
 * Para ejecutar los test, debes correr en tu terminal npm run test.
+
+### Modelo de Negocio
+
+Este proyecto o producto podría ser ofertado para diferentes empresas, en las cuales se les permitiría el acceso por medio de una suscripción. Dicho producto solo podría ser utilizado por los trabajadores de la empresa. O bien, podría ser una aplicación gratuita, 
+en la que cualquier persona podría utilizarla teniendo el link, pero, se ofertarían espacios publicitarios. Personalmente elegiría la primer opción dado que es más seguro, más rápido y secreto. 
